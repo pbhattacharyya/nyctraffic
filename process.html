@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Selin Insel">
+    <link rel="icon" href="favicon.ico">
+    <title>Interactive Data Science Midterm</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    <!-- Bootstrap theme -->
+    <link href="bootstrap-theme.css" rel="stylesheet">
+    
+        <!-- Custom styles for this template -->
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body role="document">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container" >
+        <div class="row">
+          <div class="col-12 col-md-1"></div>
+          <div class="col-12 col-md-10">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="nav-text">Story</span></a></li>
+                <li class="active"><a href="#"><span class="nav-text">Process</span></a></li>
+                <li><a href="about.html"><span class="nav-text">About</span></a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+          <div class="col-12 col-md-1"></div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <section class="container">
+      <div div id="contents" class="row theme-showcase">
+      <div class="col-12 col-md-2"></div>
+      <div class="col-xs-12 col-md-8">
+                      <div class="page-header">
+                          <h2>Process</h2>
+                          <p class="body-text">We combined two separate datasets: one on motor vehicle incidents and one on weather patterns for the same time period. We used the date information to link both rows together.</p> 
+
+                              <p class="body-text">After combining the dataset, we inputted the data into weka and used the linear regression classifier to build an algorithm.</p>
+                              
+                              <p class="body-text">We adjusted the time of the accident by 3 hours in order to include late night accidents into the data for the day before. We chose the 3 hour adjustment factor based on the data, which showed a natural dip between the end of one day and the beginning of the next.
+                              </p>
+
+                        
+                          <p class="body-text">We looked at data for the year 2017 and investigated the following topics:</p>
+                      </div>
+
+                      <div class="page-header">
+                          <h2>Finding and Exploring the Data</h2>
+                          <p class="body-text">Here are the steps we followed:</p>
+                          <ol>
+                          <br><li class="body-text">We search for data sets relevant to our question.</li>
+                          <br><li class="body-text">We brainstormed ways to correlate weather and other data.</li>
+                          <br><li class="body-text">We used NYC's open data website to find our data set.</li>
+                          <br><li class="body-text">We found a data set on traffic collisions in new york city for the year 2017.</li>
+                          <br><li class="body-text">We found the weather data for the same year.</li>
+                          <br><li class="body-text">We aggregated both datasets together based on date.</li>
+                          <br><li class="body-text">We put the data into Weka.</li>
+                          </ol>
+          
+                      </div>
+                        
+                      <div class="page-header">
+                          <h2>Using Machine Learning</h2>
+                          <p class="body-text">For the first pass, we used a linear regression algorithm.</p>
+                          <ul>
+                              <li class="body-text">Initially, we calculated our algorithm using all the features in our dataset.</li>
+                              <li class="body-text">Our correlation co-efficient was 0.3511</li>
+                              <li class="body-text">We realized all features are not independent of each other, such as number of people injured, number of motorcyclists injured, and number of bicyclists injured.</li>
+                              <li class="body-text">Because the features had continuous values, the algorithm was not as precise as it could be.</li>
+                            </ul>
+                            <br>
+                            <p class="body-text">For the second pass, we took our dataset back to excel, and “binned” each variable into three or four values. For each type of data point, we used a different approach.</p>
+                            <ul>
+                                <li class="body-text">To bucket the number of accidents, we used the distribution of values and bucketed according to number of values in each group.</li>
+                                <li class="body-text">To bucket temperature, we used another dataset of average temperatures for NYC in each month. The values that are between the minimum and maximum values for each month were labeled to be in the as the average temperature bucket. Values outside that range was labeled as low or high.</li>
+                                <li class="body-text">To bucket wind speed, we used values for Beaufort scale which is a wind classification that are available online which classifies wind speeds in wind’s ability to create damage to property.</li>
+                                <li class="body-text">The binary features such as fog, thunder and snowfall were used as buckets.</li>
+                                <li class="body-text">After binning data points, we used the naive bayes and J48 classifier. The algorithm still gave us a low correlation.</li>
+                            </ul>
+                            <br>
+                            <p class="body-text">For the third pass, we went back to excel and re-bucketed the number of accidents. We used the second and third quartiles as the average number of accidents. Values lower than that would be in a low number of accidents bucket, and values higher than that would be in a high number of accidents bucket.</p>
+                            <p class="body-text">We again used the naive bayes and J48 classifier. This time, due to the change bucketing the number of accidents, our model gave us 73% of correctly classified instances and 26% of incorrectly classified instances.</p>
+                      </div>
+                      
+        </div>
+        <div class="col-12 col-md-2"></div>
+    </div>
+          
+    </section>
+  
+  
+      <footer id="footer" class="container-fluid text-center">
+        Made by Po Bhattacharyya, Selin Insel and Viba Subramaniam for Interaction Data Science Course at CMU in Spring 2018.
+      </footer>
+  
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>

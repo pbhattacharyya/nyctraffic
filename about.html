@@ -37,6 +37,7 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="index.html"><span class="nav-text">Story</span></a></li>
+                <li><a href="process.html"><span class="nav-text">Process</span></a></li>
                 <li class="active"><a href="#"><span class="nav-text">About</span></a></li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -54,65 +55,72 @@
       <div class="col-xs-12 col-md-8">
                       <div class="page-header">
                           <h2>About the Dataset</h2>
-                          <p class="body-text">Initiated by former President Barack Obama, My Brother’s Keeper is a partnership with the United States Federal Government designed to address opportunity gaps for young people, including boys and young men of color. <br> <br> My Brother’s Keeper worked with Federal Statistical Agencies to publish statistics on national level indicators across multiple domains. In particular, My Brother’s Keeper tracks data on environment and family structure, early care and K - 12 education, post secondary education, jobs and income, and health.
-                          <br><br> Our team analyzed the following areas broken down by gender and race:
+                          <p class="body-text">We worked with three datasets for this project:</p>
                           <ol>
-                          <br><li class="body-text">Children’s living arrangements </li>
-                          <br><li class="body-text">Educational performance on standardized tests across 4th, 8th, and 12th grade </li>
-                          <br><li class="body-text">Highest level of educational attainment </li>
-                          <br><li class="body-text">Average earnings for a high school level of education </li>
-                          <br><li class="body-text">Average earnings for some college level of education </li>
-                          <br><li class="body-text">Unemployment rates for young adults </li>
+                          <br><li class="body-text">Daily traffic accidents data for the City of New York, taken from <a target="_blank" href="https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95">data.cityofnewyork.us</a>. This dataset contains information about the number of accidents by day, time, location, cause, number of deaths, number of injuries, and a number of other features.</li>
+                          <br><li class="body-text">Daily weather data from <a href="https://bigquery.cloud.google.com/table/bigquery-public-data:noaa_gsod.gsod2017?pli=1" target="_blank">NOAA</a>. This dataset includes information about the mean temperatures, highs and lows, precipitation, wind, fog, and a number of other features.</li>
+                          <br><li class="body-text">Daily events calendar from <a href="http://www1.nyc.gov/events/" target="_blank">nyc.gov</a>. We used data from this source to come up with a list of major events, such as national holidays and parades, for New York City.</li>
                           </ol>
-                          </p>
-                      </div>
                         
+                          <p class="body-text">We looked at data for the year 2017 and investigated the following topics:</p>
+
+                          <ol>
+                            <br><li class="body-text">How do the number of accidents, injuries, and deaths vary based on time of day?</li>
+                            <br><li class="body-text">How do the number of accidents vary based on the day of the week?</li>
+                            <br><li class="body-text">How do the number of accidents per day vary based on weather?</li>
+                            <br><li class="body-text">Can we use weather data to predict that how accident-prone a day might be?</li>
+                          </ol>
+                      </div>
+
                       <div class="page-header">
-                          <h2>Where did the data come from and who has access to it?</h2>
-                          <p class="body-text">The data for this project came from US Department of Education's My Brother's Keeper Task Force data from <a href="https://www2.ed.gov/rschstat/statistics/surveys/mbk/index.html"> this link</a>. The datasets of the My Brother’s Keeper initiative come directly from Federal Statistical Agencies such as
-                            <a href="https://catalog.data.gov/dataset/current-population-survey"> data.gov</a>,
-                            <a href="https://www.bls.gov/cps/">  Bureau of Labor Statistics</a> and
-                            <a href="https://nces.ed.gov/nationsreportcard/"> National Assessment of Educational Progress</a>. It is available to the public, and can be viewed by anybody.</p>
+                          <h2>Where did this data come from and who has access to it?</h2>
+                          <p class="body-text">We worked with three datasets for this project:</p>
+                          <ol>
+                          <br><li class="body-text">Part of the data for this project came from the NYC Open Data project. The traffic data comes from the NYPD’s databases, and it is manually run every month and reviewed by the TrafficStat Unit before being posted on the NYPD website. It is available to the public, and can be viewed by anybody.</li>
+                          <br><li class="body-text">We also obtained data from <a href="https://bigquery.cloud.google.com/table/bigquery-public-data:noaa_gsod.gsod2017?pli=1" target="_blank">NOAA</a>.</li>
+                          <br><li class="body-text">We have also taken data from the NYC government’s events calendar. This data is also publicly available, and can be viewed by anybody.</li>
+                          </ol>
+          
                       </div>
                         
                       <div class="page-header">
                           <h2>Is the data accountable?</h2>
-                          <p class="body-text">The datasets of the My Brother’s Keeper initiative come directly from Federal Statistical Agencies. It is available to the public for viewing. We believe the data is fairly accountable, as it is used by researchers, policy makers, city governments and many more entities.
+                          <p class="body-text">The traffic datasets come directly from NYPD’s archives as well as from other sources in the NYPD government. It is available to the public for viewing. We believe the data is fairly accountable, as it is used by researchers, policy makers, city governments and many more entities. The dataset are appropriately anonymized and publicly available.
+                            </p>
+                            <p class="body-text">Having said that, we do not have access to the tools that were used to collect the data, so they cannot be reproduced and validated. This is especially true for traffic data, which is reported by individual police officers and then collated in some way to be entered into the database.
                           </p> 
                       </div>
                         
-                              <div class="page-header">
+                        <div class="page-header">
                           <h2>Is the data complete?</h2>
-                          <p class="body-text">The datasets analyzed are not a complete snapshot of each target population across time. Rather, the datasets contain information from samples of respondents. Also, the individuals vary from domain to domain. For example, those sampled in the living arrangements data set differ from those sampled in the unemployment data set. For this reason, we are not able to deduce correlations across multiple entities. A longitudinal study would be beneficial to try to understand the effects of each dimension on different groups. However, that’s not the nature of this dataset. <br><br> Each dataset provides information to formulate basic interpretations. However, it would be beneficial to have additional data, such as information on parental interactions, learning environment, social interactions, or information on the individual’s community or neighborhood setting, etc. More data would enable us to draw more conclusions. <br><br> In each dataset that was used for this project, all the data points were complete for the year of 2013.
+                          <p class="body-text">The traffic dataset is a complete snapshot of the accidents that take place on each day. The data is broken down by location and injury, and its collection is mandated by because the NYC Council passed Local Law #11 in 2011. 
                           </p>
+                          <p class="body-text">The weather dataset is a complete and thorough snapshot of the weather in the New York City. It is based on data collected at the weather station in Central Park.
+                            </p>
+                            <p class="body-text">The events dataset is not a complete snapshot of all the events that happened in New York City in 2017. Instead, the events have been selected based on a number of previously determined criteria, such as size, significance and popularity. We chose events based on their likelihood to affect traffic (such as parades), and chose to leave out events that didn’t seem closely related to traffic (such as a christmas tree lighting). 
+                              </p>
                           </div>
                         
-                              <div class="page-header">
+                        <div class="page-header">
                           <h2>Is the data coherent?</h2>
-                          <p class="body-text"> During initial exploratory exercises each dataset seemed coherent and validated our initial hypotheses as a team. However, on deeper examination there are small errors found when the datasets are merged. For example, for the educational attainment datasets, when the percentages of highest levels of educational attainment is summed for each population, the result is not 100% but fluctuates between 101% and 95%. There is also a margin of error listed in another page for each data point.  When this margin of error of each measurement is accounted for then this fluctuation can be explained and the data becomes more coherent.
+                          <p class="body-text">During initial exploratory exercises each dataset seemed coherent and validated our initial hypotheses as a team. This assumption was backed up as we continued to dig into the data. The lone exception is that five rows in the traffic spreadsheet had spurious location data.
                             </p>
                           </div>
                         
                               <div class="page-header">
                           <h2>Is the data correct?</h2>
-                          <p class="body-text"> The information within each dataset comes directly from sources such as current population surveys, U.S. Department of Education, National Center for Educational Statistics, and the Bureau of Labor Statistics. We cannot verify if the data is entirely correct. The data itself may not be fully credible. We must take into account the fact that there may have been input errors or respondents may have not answered truthfully. There are also sampling errors associated with each dataset. Some of this error is accounted for in each dataset by the researchers. Different samples may lead to different estimates, due to the number of samples drawn. However, we presume the data is mostly correct as it has been collected by highly credible institutions. </p>
+                          <p class="body-text">The traffic data contains the official version of events for each accident in New York City as filed away by the NYPD. It is possible that in some cases, the data about the reason for the accident
+                              Is wrong. This might be so for a few different reasons: perhaps the incident was reported incorrectly to the authorities or there is a court case pending and the true reason for the accident has not yet come to light.
+                              </p>
+                              <p class="body-text">
+                                  The weather data is biased in favor of the weather station where that data was recorded. Since New York City is a fairly large area, it is possible that different regions experienced different weather patterns on a given day. This may be especially true for patchy showers and thunderstorms.
+                              </p>
                               </div>
-                      
 
-                        <div class="page-header">
-                          <h2>User Testing</h2>
-                          <p class="body-text">When we were building this website, we first sketched out how we wanted to visualize some of our data. We also had a narrative idea where we did not reveal which data point belonged to which group until the end.</p>
-                          <img class="text-block" src="first-sketch.png">
-                          <img class="text-block" src="user-test.png">
-                            <p class="body-text">When we received feedback on this visualization, our findings were:</p>
-                            <p class="body-text">1. Our participant didn’t understand what different colors meant.</p>
-                            <p class="body-text">2. Our participant didn’t realize that each dot mapped to a population</p>
-                            <p class="body-text">As a result, we chose to annotate each group in each visualization. We also changed our dot visualization to a bar chart for the first analysis.</p>
-                              </div>
-                        </div>
-                        <div class="col-12 col-md-2"></div>
-    </div>
-          
+                    </div>
+                    <div class="col-12 col-md-2"></div>
+            </div>
+                                
     </section>
   
   
