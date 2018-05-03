@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Selin Insel">
+    <link rel="icon" href="favicon.ico">
+    <title>Interactive Data Science Final</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    <!-- Bootstrap theme -->
+    <link href="bootstrap-theme.css" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body role="document">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container" >
+        <div class="row">
+          <div class="col-12 col-md-1"></div>
+          <div class="col-12 col-md-10">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="nav-text">Story</span></a></li>
+                <li><a href="about.html"><span class="nav-text">About</span></a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+          <div class="col-12 col-md-1"></div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <section class="container">
+            <div id="contents" class="row theme-showcase">
+                    <div class="col-12 col-md-2"></div>
+                    <div class="col-xs-12 col-md-8">
+                        <h2 id="question">Is there a link between weather and traffic accidents in New York City?</h2>
+                    </div>
+                    <div class="col-12 col-md-2"></div>
+                </div>
+
+
+        <div class="row">
+            <div class="col-12 col-md-2 theme-showcase"></div>
+            <div class="col-12 col-md-8 text-block">
+                <h6 class="highlight">Accidents by Location and Day
+                </h6>
+                <p class="body-text">
+                    To explore the data, we created a map showing the locations of all the accidents, how many people were affected and the main reason why the accident happened. You can filter the accidents by day.
+                  </p>
+            <div class="col-12 col-md-2"></div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-1 theme-showcase"></div>
+            <div class="col-12 col-md-10 text-block">
+                <div class='tableauPlaceholder' id='viz1525361223762' style='position: relative'><noscript><a href='#'><img alt='Accidents in 2017 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7X&#47;7XBH3JCPH&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;7XBH3JCPH' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7X&#47;7XBH3JCPH&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1525361223762');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+            <div class="col-12 col-md-2 theme-showcase"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-2 theme-showcase"></div>
+            <div class="col-12 col-md-8 text-block">
+                <h6 class="highlight">Reasons for Accidents
+                </h6>
+                <p class="body-text">
+                    Here’s the breakdown of the reasons for accidents in New York. 
+                  </p>
+            <div class="col-12 col-md-2"></div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-1 theme-showcase"></div>
+            <div class="col-12 col-md-10 text-block">
+                <div class='tableauPlaceholder' id='viz1525361971663' style='position: relative'><noscript><a href='#'><img alt='Contributing Factors to Number of Accidents ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCAccidents_0&#47;Reasons&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NYCAccidents_0&#47;Reasons' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCAccidents_0&#47;Reasons&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1525361971663');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>            </div>
+                <div class="col-12 col-md-2 theme-showcase"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 col-md-2 theme-showcase"></div>
+            <div class="col-12 col-md-8 text-block">
+                <h6 class="highlight">Time of Day
+                </h6>
+                <p class="body-text">
+                    Here’s how the number of accidents vary over the course of a day.
+                  </p>
+                </div>
+            <div class="col-12 col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-1 theme-showcase"></div>
+            <div class="col-12 col-md-10 text-block">
+                <div class='tableauPlaceholder' id='viz1525362073636' style='position: relative'><noscript><a href='#'><img alt='The Effect of Time of Day on Number of Accidents over 2017 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCAccidents_0&#47;Hour&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NYCAccidents_0&#47;Hour' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCAccidents_0&#47;Hour&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1525362073636');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>            <div class="col-12 col-md-2 theme-showcase"></div>
+            </div>
+            <div class="col-12 col-md-2 theme-showcase"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-2 theme-showcase"></div>
+            <div class="col-12 col-md-8 text-block">
+                <h6 class="highlight">Day of the Week
+                </h6>
+                <p class="body-text">
+                    Here’s how the number of accidents vary over the course of the week. In the visualisation on the right, we tried shifting the days to start each day at 3:00 AM and end each day at 3:00 AM because we assumed that many accidents that happen between 12:00 AM and 3:00 would belong to the day before.</p>
+                  </div>
+            <div class="col-12 col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-1 theme-showcase"></div>
+            <div class="col-12 col-md-10 text-block">
+                <div class='tableauPlaceholder' id='viz1525362255418' style='position: relative'><noscript><a href='#'><img alt='Day of Week Comparison ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCAccidents_0&#47;DayofWeekComparison&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NYCAccidents_0&#47;DayofWeekComparison' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCAccidents_0&#47;DayofWeekComparison&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1525362255418');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='427px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>            <div class="col-12 col-md-2 theme-showcase"></div>
+            <div class="col-12 col-md-2 theme-showcase"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 col-md-2 theme-showcase"></div>
+            <div class="col-12 col-md-8 text-block">
+                <p class="body-text">
+                    This increased the number of accidents on Friday and Saturday while decreasing the number accidents on Sunday. 
+                  </p>
+                </div>                  
+            <div class="col-12 col-md-2"></div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-2 theme-showcase"></div>
+            <div class="col-12 col-md-8 text-block">
+                <h6 class="highlight">Predicting accidents
+                </h6>
+                <p class="body-text">Can we use machine learning to predict the number of accidents on a given day based on weather?</p>
+                <p class="body-text">Here is a model we ran based on a tree-based algorithm.</p>
+
+                  </div>
+            <div class="col-12 col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-1 theme-showcase"></div>
+            <div class="col-12 col-md-10 text-block">
+              <img style="width:100%" src="/J48-Classifier-Results.png">
+            </div>
+            <div class="col-12 col-md-2 theme-showcase"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-2 theme-showcase"></div>
+            <div class="col-12 col-md-8 text-block">
+                <p class="body-text">Here is a model we ran based on a Bayesian algorithm.</p>
+
+                  </div>
+            <div class="col-12 col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-1 theme-showcase"></div>
+            <div class="col-12 col-md-10 text-block">
+              <img style="width:100%" src="/Naive-Bayes-Classifier-Results.png">
+            </div>
+            <div class="col-12 col-md-2 theme-showcase"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-2 theme-showcase"></div>
+            <div class="col-12 col-md-8 text-block">
+                <h6 class="highlight">Visualizing the results
+                </h6>
+                <p class="body-text">Here's a visualization showing the ability of our model to predict how accident-prone a day will be.</p>
+                  </div>
+            <div class="col-12 col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-1 theme-showcase"></div>
+            <div class="col-12 col-md-10 text-block">
+                <div class='tableauPlaceholder' id='viz1525363972276' style='position: relative'><noscript><a href='#'><img alt='ML Results 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCAccidents_0&#47;MLResults1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NYCAccidents_0&#47;MLResults1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCAccidents_0&#47;MLResults1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1525363972276');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>            </div>
+            <div class="col-12 col-md-2 theme-showcase"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-2 theme-showcase"></div>
+            <div class="col-12 col-md-8 text-block">
+                <p class="body-text">Here is the confusion matrix from our model.</p>
+
+                  </div>
+            <div class="col-12 col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-1 theme-showcase"></div>
+            <div class="col-12 col-md-10 text-block">
+              <img style="width:100%" src="/confusion-matrix.png">
+            </div>
+            <div class="col-12 col-md-2 theme-showcase"></div>
+        </div>
+    </section>
+  
+  
+      <footer id="footer" class="container-fluid text-center">
+        Made by Po Bhattacharyya, Selin Insel and Viba Subramaniam for Interaction Data Science Course at CMU in Spring 2018.
+      </footer>
+  
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>

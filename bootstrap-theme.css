@@ -1,0 +1,107 @@
+html, body {
+  margin: 10px;
+  padding: 0;
+  font-family:  'Lato', sans-serif;
+}
+
+span, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 500;
+  color:black;
+
+}
+
+#black-text{
+  color:black;
+}
+
+.text-block{
+ padding-top: 30px;
+ padding-bottom: 30px;
+}
+
+.nav-text{
+  font-size: 1.5em;
+  font-family: sans-serif;
+  color:white;
+
+}
+.nav-text:hover{
+  color: #cccccc;
+}
+
+h6.highlight{
+  font-size: 2em;
+  line-height: 2.3em;
+  color: black;
+}
+
+.body-text {
+  font-size: 1.5em;
+  line-height: 1.7em;
+  color: #434343;
+
+}
+
+#controls {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+}
+
+span:nth-child(2) {
+  margin-left: 20px;
+}
+
+#country-info {
+  color: #666;
+  font-size: 28px;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+}
+
+svg {
+  border: 1px solid #ddd;
+}
+
+circle {
+  stroke: white;
+  stroke-width: 1.5;
+}
+
+.continent-key-element text {
+  fill: white;
+}
+
+.btn-space {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#contents {
+	margin-top: 80px;
+}
+
+
+#question {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+#answer {
+	line-height: 1.5;
+}
+
+#explanation {
+	margin-top: 50px;
+}
+
+#footer {
+	margin-top: 40px;
+	padding: 10px;
+}

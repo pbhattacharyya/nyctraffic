@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Selin Insel">
+    <link rel="icon" href="favicon.ico">
+    <title>Interactive Data Science Midterm</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    <!-- Bootstrap theme -->
+    <link href="bootstrap-theme.css" rel="stylesheet">
+    
+        <!-- Custom styles for this template -->
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body role="document">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container" >
+        <div class="row">
+          <div class="col-12 col-md-1"></div>
+          <div class="col-12 col-md-10">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="nav-text">Story</span></a></li>
+                <li class="active"><a href="#"><span class="nav-text">About</span></a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+          <div class="col-12 col-md-1"></div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <section class="container">
+      <div div id="contents" class="row theme-showcase">
+      <div class="col-12 col-md-2"></div>
+      <div class="col-xs-12 col-md-8">
+                      <div class="page-header">
+                          <h2>About the Dataset</h2>
+                          <p class="body-text">Initiated by former President Barack Obama, My Brother’s Keeper is a partnership with the United States Federal Government designed to address opportunity gaps for young people, including boys and young men of color. <br> <br> My Brother’s Keeper worked with Federal Statistical Agencies to publish statistics on national level indicators across multiple domains. In particular, My Brother’s Keeper tracks data on environment and family structure, early care and K - 12 education, post secondary education, jobs and income, and health.
+                          <br><br> Our team analyzed the following areas broken down by gender and race:
+                          <ol>
+                          <br><li class="body-text">Children’s living arrangements </li>
+                          <br><li class="body-text">Educational performance on standardized tests across 4th, 8th, and 12th grade </li>
+                          <br><li class="body-text">Highest level of educational attainment </li>
+                          <br><li class="body-text">Average earnings for a high school level of education </li>
+                          <br><li class="body-text">Average earnings for some college level of education </li>
+                          <br><li class="body-text">Unemployment rates for young adults </li>
+                          </ol>
+                          </p>
+                      </div>
+                        
+                      <div class="page-header">
+                          <h2>Where did the data come from and who has access to it?</h2>
+                          <p class="body-text">The data for this project came from US Department of Education's My Brother's Keeper Task Force data from <a href="https://www2.ed.gov/rschstat/statistics/surveys/mbk/index.html"> this link</a>. The datasets of the My Brother’s Keeper initiative come directly from Federal Statistical Agencies such as
+                            <a href="https://catalog.data.gov/dataset/current-population-survey"> data.gov</a>,
+                            <a href="https://www.bls.gov/cps/">  Bureau of Labor Statistics</a> and
+                            <a href="https://nces.ed.gov/nationsreportcard/"> National Assessment of Educational Progress</a>. It is available to the public, and can be viewed by anybody.</p>
+                      </div>
+                        
+                      <div class="page-header">
+                          <h2>Is the data accountable?</h2>
+                          <p class="body-text">The datasets of the My Brother’s Keeper initiative come directly from Federal Statistical Agencies. It is available to the public for viewing. We believe the data is fairly accountable, as it is used by researchers, policy makers, city governments and many more entities.
+                          </p> 
+                      </div>
+                        
+                              <div class="page-header">
+                          <h2>Is the data complete?</h2>
+                          <p class="body-text">The datasets analyzed are not a complete snapshot of each target population across time. Rather, the datasets contain information from samples of respondents. Also, the individuals vary from domain to domain. For example, those sampled in the living arrangements data set differ from those sampled in the unemployment data set. For this reason, we are not able to deduce correlations across multiple entities. A longitudinal study would be beneficial to try to understand the effects of each dimension on different groups. However, that’s not the nature of this dataset. <br><br> Each dataset provides information to formulate basic interpretations. However, it would be beneficial to have additional data, such as information on parental interactions, learning environment, social interactions, or information on the individual’s community or neighborhood setting, etc. More data would enable us to draw more conclusions. <br><br> In each dataset that was used for this project, all the data points were complete for the year of 2013.
+                          </p>
+                          </div>
+                        
+                              <div class="page-header">
+                          <h2>Is the data coherent?</h2>
+                          <p class="body-text"> During initial exploratory exercises each dataset seemed coherent and validated our initial hypotheses as a team. However, on deeper examination there are small errors found when the datasets are merged. For example, for the educational attainment datasets, when the percentages of highest levels of educational attainment is summed for each population, the result is not 100% but fluctuates between 101% and 95%. There is also a margin of error listed in another page for each data point.  When this margin of error of each measurement is accounted for then this fluctuation can be explained and the data becomes more coherent.
+                            </p>
+                          </div>
+                        
+                              <div class="page-header">
+                          <h2>Is the data correct?</h2>
+                          <p class="body-text"> The information within each dataset comes directly from sources such as current population surveys, U.S. Department of Education, National Center for Educational Statistics, and the Bureau of Labor Statistics. We cannot verify if the data is entirely correct. The data itself may not be fully credible. We must take into account the fact that there may have been input errors or respondents may have not answered truthfully. There are also sampling errors associated with each dataset. Some of this error is accounted for in each dataset by the researchers. Different samples may lead to different estimates, due to the number of samples drawn. However, we presume the data is mostly correct as it has been collected by highly credible institutions. </p>
+                              </div>
+                      
+
+                        <div class="page-header">
+                          <h2>User Testing</h2>
+                          <p class="body-text">When we were building this website, we first sketched out how we wanted to visualize some of our data. We also had a narrative idea where we did not reveal which data point belonged to which group until the end.</p>
+                          <img class="text-block" src="first-sketch.png">
+                          <img class="text-block" src="user-test.png">
+                            <p class="body-text">When we received feedback on this visualization, our findings were:</p>
+                            <p class="body-text">1. Our participant didn’t understand what different colors meant.</p>
+                            <p class="body-text">2. Our participant didn’t realize that each dot mapped to a population</p>
+                            <p class="body-text">As a result, we chose to annotate each group in each visualization. We also changed our dot visualization to a bar chart for the first analysis.</p>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-2"></div>
+    </div>
+          
+    </section>
+  
+  
+      <footer id="footer" class="container-fluid text-center">
+        Made by Po Bhattacharyya, Selin Insel and Viba Subramaniam for Interaction Data Science Course at CMU in Spring 2018.
+      </footer>
+  
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>
